@@ -1,0 +1,14 @@
+[
+    {
+        "label": "MOVIE_API_KEY",
+        "kind": 5,
+        "importPath": "app.instance.config",
+        "description": "app.instance.config",
+        "peekOfCode": "MOVIE_API_KEY = 'd3fd8f785d72df0916d8d9932813a6b0'",
+        "detail": "app.instance.config",
+        "documentation": {
+            "value": "\n```python\nfrom app.instance.config import MOVIE_API_KEY\n```\n\n```python\n\n\n```\n\n```python\nMOVIE_API_KEY = 'd3fd8f785d72df0916d8d9932813a6b0'\n```\n",
+            "supportThemeIcons": false
+        }
+    }
+]

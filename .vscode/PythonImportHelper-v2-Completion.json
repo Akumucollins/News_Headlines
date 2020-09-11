@@ -1,13 +1,117 @@
 [
     {
-        "label": "MOVIE_API_KEY",
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {
+            "value": "\n```python\nimport flask\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "views",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {
+            "value": "\n```python\nimport app\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {
+            "value": "\n```python\nimport app\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {
+            "value": "\n```python\nimport app\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "NEWS_API_KEY",
         "kind": 5,
         "importPath": "app.instance.config",
         "description": "app.instance.config",
-        "peekOfCode": "MOVIE_API_KEY = 'd3fd8f785d72df0916d8d9932813a6b0'",
+        "peekOfCode": "NEWS_API_KEY = '7c38eec5803b4d8f88792f24e95401d3'",
         "detail": "app.instance.config",
         "documentation": {
-            "value": "\n```python\nfrom app.instance.config import MOVIE_API_KEY\n```\n\n```python\n\n\n```\n\n```python\nMOVIE_API_KEY = 'd3fd8f785d72df0916d8d9932813a6b0'\n```\n",
+            "value": "\n```python\nfrom app.instance.config import NEWS_API_KEY\n```\n\n```python\n\n\n```\n\n```python\nNEWS_API_KEY = '7c38eec5803b4d8f88792f24e95401d3'\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.__init__",
+        "description": "app.__init__",
+        "peekOfCode": "app = Flask(__name__,instance_relative_config = True)\n# Setting up configuration\napp.config.from_object(DevConfig)\napp.config.from_pyfile('config.py')\nfrom app import views",
+        "detail": "app.__init__",
+        "documentation": {
+            "value": "\n```python\nfrom app.__init__ import app\n```\n\n```python\n\n\n```\n\n```python\napp = Flask(__name__,instance_relative_config = True)\n# Setting up configuration\napp.config.from_object(DevConfig)\napp.config.from_pyfile('config.py')\nfrom app import views\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "api_key",
+        "kind": 5,
+        "importPath": "app.request",
+        "description": "app.request",
+        "peekOfCode": "api_key = app.config['MOVIE_API_KEY']",
+        "detail": "app.request",
+        "documentation": {
+            "value": "\n```python\nfrom app.request import api_key\n```\n\n```python\n\n\n```\n\n```python\napi_key = app.config['MOVIE_API_KEY']\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class Config:\n    '''\n    General configuration parent class\n    '''\n    NEWS_API_BASE_URL = \"https://newsapi.org/v2/{}?country=us&apiKey={}\"\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class\n    Args:\n        Config: The parent configuration class with General configuration settings",
+        "detail": "config",
+        "documentation": {
+            "value": "\n```python\nfrom config import Config\n```\n\n```python\n\n\n```\n\n```python\nclass Config:\n    '''\n    General configuration parent class\n    '''\n    NEWS_API_BASE_URL = \"https://newsapi.org/v2/{}?country=us&apiKey={}\"\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class\n    Args:\n        Config: The parent configuration class with General configuration settings\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ProdConfig",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class ProdConfig(Config):\n    '''\n    Production  configuration child class\n    Args:\n        Config: The parent configuration class with General configuration settings\n    '''\n    pass\nclass DevConfig(Config):\n    '''\n    Development  configuration child class",
+        "detail": "config",
+        "documentation": {
+            "value": "\n```python\nfrom config import ProdConfig\n```\n\n```python\n\n\n```\n\n```python\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class\n    Args:\n        Config: The parent configuration class with General configuration settings\n    '''\n    pass\nclass DevConfig(Config):\n    '''\n    Development  configuration child class\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "DevConfig",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class DevConfig(Config):\n    '''\n    Development  configuration child class\n    Args:\n        Config: The parent configuration class with General configuration settings\n    '''\n    DEBUG = True",
+        "detail": "config",
+        "documentation": {
+            "value": "\n```python\nfrom config import DevConfig\n```\n\n```python\n\n\n```\n\n```python\nclass DevConfig(Config):\n    '''\n    Development  configuration child class\n    Args:\n        Config: The parent configuration class with General configuration settings\n    '''\n    DEBUG = True\n```\n",
             "supportThemeIcons": false
         }
     }

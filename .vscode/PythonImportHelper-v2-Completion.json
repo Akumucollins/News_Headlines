@@ -56,6 +56,28 @@
         }
     },
     {
+        "label": "Articles",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nimport app.models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Sources",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nimport app.models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Headlines",
         "importPath": "models",
         "description": "models",
@@ -74,17 +96,6 @@
         "detail": "models",
         "documentation": {
             "value": "\n```python\nimport models\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "Sources",
-        "importPath": "app.models",
-        "description": "app.models",
-        "isExtraImport": true,
-        "detail": "app.models",
-        "documentation": {
-            "value": "\n```python\nimport app.models\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -109,6 +120,18 @@
         "detail": "app.__init__",
         "documentation": {
             "value": "\n```python\nfrom app.__init__ import app\n```\n\n```python\n\n\n```\n\n```python\napp = Flask(__name__,instance_relative_config = True)\n# Setting up configuration\napp.config.from_object(DevConfig)\napp.config.from_pyfile('config.py')\nfrom app import views\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "ArticleTest",
+        "kind": 6,
+        "importPath": "app.articles_test",
+        "description": "app.articles_test",
+        "peekOfCode": "class ArticleTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Article class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_article = Articles('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
+        "detail": "app.articles_test",
+        "documentation": {
+            "value": "\n```python\nfrom app.articles_test import ArticleTest\n```\n\n```python\n\n\n```\n\n```python\nclass ArticleTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Article class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_article = Articles('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -145,6 +168,18 @@
         "detail": "app.models",
         "documentation": {
             "value": "\n```python\nfrom app.models import Headlines\n```\n\n```python\n\n\n```\n\n```python\nclass Headlines:\n    '''\n    Class that instantiates objects of the headlines categories objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Article",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Article:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image",
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nfrom app.models import Article\n```\n\n```python\n\n\n```\n\n```python\nclass Article:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
             "supportThemeIcons": false
         }
     },

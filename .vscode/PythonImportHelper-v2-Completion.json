@@ -67,6 +67,17 @@
         }
     },
     {
+        "label": "Category",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {
+            "value": "\n```python\nimport models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Headlines",
         "importPath": "models",
         "description": "models",
@@ -136,6 +147,18 @@
         }
     },
     {
+        "label": "CategoryTest",
+        "kind": 6,
+        "importPath": "app.category_test",
+        "description": "app.category_test",
+        "peekOfCode": "class CategoryTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Category class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_category = Category('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
+        "detail": "app.category_test",
+        "documentation": {
+            "value": "\n```python\nfrom app.category_test import CategoryTest\n```\n\n```python\n\n\n```\n\n```python\nclass CategoryTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Category class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_category = Category('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "HeadlinesTest",
         "kind": 6,
         "importPath": "app.headlines_test",
@@ -180,6 +203,18 @@
         "detail": "app.models",
         "documentation": {
             "value": "\n```python\nfrom app.models import Articles\n```\n\n```python\n\n\n```\n\n```python\nclass Articles:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Category:\n    '''\n    Class that instantiates objects of the news categories objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image",
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nfrom app.models import Category\n```\n\n```python\n\n\n```\n\n```python\nclass Category:\n    '''\n    Class that instantiates objects of the news categories objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
             "supportThemeIcons": false
         }
     },

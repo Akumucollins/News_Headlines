@@ -44,29 +44,6 @@
         }
     },
     {
-        "label": "app.models",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "app.models",
-        "description": "app.models",
-        "detail": "app.models",
-        "documentation": {
-            "value": "\n```python\nimport app.models\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "Sources",
-        "importPath": "app.models",
-        "description": "app.models",
-        "isExtraImport": true,
-        "detail": "app.models",
-        "documentation": {
-            "value": "\n```python\nimport app.models\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
         "label": "unittest",
         "kind": 6,
         "isExtraImport": true,
@@ -79,6 +56,17 @@
         }
     },
     {
+        "label": "Headlines",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {
+            "value": "\n```python\nimport models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Source",
         "importPath": "models",
         "description": "models",
@@ -86,6 +74,17 @@
         "detail": "models",
         "documentation": {
             "value": "\n```python\nimport models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Sources",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nimport app.models\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -114,14 +113,38 @@
         }
     },
     {
+        "label": "HeadlinesTest",
+        "kind": 6,
+        "importPath": "app.headlines_test",
+        "description": "app.headlines_test",
+        "peekOfCode": "class HeadlinesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Headlines class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_headlines = Headlines('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
+        "detail": "app.headlines_test",
+        "documentation": {
+            "value": "\n```python\nfrom app.headlines_test import HeadlinesTest\n```\n\n```python\n\n\n```\n\n```python\nclass HeadlinesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Headlines class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_headlines = Headlines('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Sources",
         "kind": 6,
         "importPath": "app.models",
         "description": "app.models",
-        "peekOfCode": "class Sources:\n    '''\n    Source class to define source objects\n    '''\n    def __init__(self,id,name,description,url):\n        self.id = id\n        self.name = name\n        self.description = description\n        self.url = url",
+        "peekOfCode": "class Sources:\n    '''\n    Sources class to define source objects\n    '''\n    def __init__(self,id,name,description,url):\n        self.id = id\n        self.name = name\n        self.description = description\n        self.url = url\nclass Headlines:",
         "detail": "app.models",
         "documentation": {
-            "value": "\n```python\nfrom app.models import Sources\n```\n\n```python\n\n\n```\n\n```python\nclass Sources:\n    '''\n    Source class to define source objects\n    '''\n    def __init__(self,id,name,description,url):\n        self.id = id\n        self.name = name\n        self.description = description\n        self.url = url\n```\n",
+            "value": "\n```python\nfrom app.models import Sources\n```\n\n```python\n\n\n```\n\n```python\nclass Sources:\n    '''\n    Sources class to define source objects\n    '''\n    def __init__(self,id,name,description,url):\n        self.id = id\n        self.name = name\n        self.description = description\n        self.url = url\nclass Headlines:\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Headlines",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Headlines:\n    '''\n    Class that instantiates objects of the headlines categories objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image",
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nfrom app.models import Headlines\n```\n\n```python\n\n\n```\n\n```python\nclass Headlines:\n    '''\n    Class that instantiates objects of the headlines categories objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -140,12 +163,12 @@
     {
         "label": "SourcesTest",
         "kind": 6,
-        "importPath": "app.source_test",
-        "description": "app.source_test",
+        "importPath": "app.sources_test",
+        "description": "app.sources_test",
         "peekOfCode": "class SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):",
-        "detail": "app.source_test",
+        "detail": "app.sources_test",
         "documentation": {
-            "value": "\n```python\nfrom app.source_test import SourcesTest\n```\n\n```python\n\n\n```\n\n```python\nclass SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):\n```\n",
+            "value": "\n```python\nfrom app.sources_test import SourcesTest\n```\n\n```python\n\n\n```\n\n```python\nclass SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):\n```\n",
             "supportThemeIcons": false
         }
     },

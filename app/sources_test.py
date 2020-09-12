@@ -15,7 +15,7 @@ class SourcesTest(unittest.TestCase):
 
     def test_instance(self):
         '''
-        Test to check creation of new article Source instance
+        Test to check creation of new article Sources instance
         '''
         self.assertTrue(isinstance(self.new_source,Sources))
 

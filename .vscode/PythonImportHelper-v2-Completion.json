@@ -57,23 +57,12 @@
     },
     {
         "label": "Articles",
-        "importPath": "app.models",
-        "description": "app.models",
+        "importPath": "models",
+        "description": "models",
         "isExtraImport": true,
-        "detail": "app.models",
+        "detail": "models",
         "documentation": {
-            "value": "\n```python\nimport app.models\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "Sources",
-        "importPath": "app.models",
-        "description": "app.models",
-        "isExtraImport": true,
-        "detail": "app.models",
-        "documentation": {
-            "value": "\n```python\nimport app.models\n```\n",
+            "value": "\n```python\nimport models\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -96,6 +85,17 @@
         "detail": "models",
         "documentation": {
             "value": "\n```python\nimport models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Sources",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nimport app.models\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -172,14 +172,14 @@
         }
     },
     {
-        "label": "Article",
+        "label": "Articles",
         "kind": 6,
         "importPath": "app.models",
         "description": "app.models",
-        "peekOfCode": "class Article:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image",
+        "peekOfCode": "class Articles:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image",
         "detail": "app.models",
         "documentation": {
-            "value": "\n```python\nfrom app.models import Article\n```\n\n```python\n\n\n```\n\n```python\nclass Article:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
+            "value": "\n```python\nfrom app.models import Articles\n```\n\n```python\n\n\n```\n\n```python\nclass Articles:\n    '''\n    Class that instantiates objects of the news article objects of the news sources\n    '''\n    def __init__(self,author,description,time,url,image,title):\n        self.author = author\n        self.description = description\n        self.time = time\n        self.url = url\n        self.image = image\n```\n",
             "supportThemeIcons": false
         }
     },

@@ -20,7 +20,7 @@ class Headlines:
         self.image = image
         self.title = title        
         
-class Article:
+class Articles:
     '''
     Class that instantiates objects of the news article objects of the news sources
     '''

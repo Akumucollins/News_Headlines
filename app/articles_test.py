@@ -1,5 +1,5 @@
 import unittest
-from app.models import Articles
+from models import Articles
 
 class ArticleTest(unittest.TestCase):
     '''
@@ -17,3 +17,6 @@ class ArticleTest(unittest.TestCase):
         Test to check creation of new article instance
         '''
         self.assertTrue(isinstance(self.new_article,Articles))
+        
+if __name__ == '__main__':
+    unittest.main()        

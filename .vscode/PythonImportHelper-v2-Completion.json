@@ -135,42 +135,6 @@
         }
     },
     {
-        "label": "ArticleTest",
-        "kind": 6,
-        "importPath": "app.articles_test",
-        "description": "app.articles_test",
-        "peekOfCode": "class ArticleTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Article class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_article = Articles('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
-        "detail": "app.articles_test",
-        "documentation": {
-            "value": "\n```python\nfrom app.articles_test import ArticleTest\n```\n\n```python\n\n\n```\n\n```python\nclass ArticleTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Article class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_article = Articles('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "CategoryTest",
-        "kind": 6,
-        "importPath": "app.category_test",
-        "description": "app.category_test",
-        "peekOfCode": "class CategoryTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Category class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_category = Category('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
-        "detail": "app.category_test",
-        "documentation": {
-            "value": "\n```python\nfrom app.category_test import CategoryTest\n```\n\n```python\n\n\n```\n\n```python\nclass CategoryTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Category class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_category = Category('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "HeadlinesTest",
-        "kind": 6,
-        "importPath": "app.headlines_test",
-        "description": "app.headlines_test",
-        "peekOfCode": "class HeadlinesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Headlines class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_headlines = Headlines('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
-        "detail": "app.headlines_test",
-        "documentation": {
-            "value": "\n```python\nfrom app.headlines_test import HeadlinesTest\n```\n\n```python\n\n\n```\n\n```python\nclass HeadlinesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Headlines class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_headlines = Headlines('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
         "label": "Sources",
         "kind": 6,
         "importPath": "app.models",
@@ -231,14 +195,50 @@
         }
     },
     {
+        "label": "ArticleTest",
+        "kind": 6,
+        "importPath": "tests.articles_test",
+        "description": "tests.articles_test",
+        "peekOfCode": "class ArticleTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Article class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_article = Articles('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
+        "detail": "tests.articles_test",
+        "documentation": {
+            "value": "\n```python\nfrom tests.articles_test import ArticleTest\n```\n\n```python\n\n\n```\n\n```python\nclass ArticleTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Article class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_article = Articles('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "CategoryTest",
+        "kind": 6,
+        "importPath": "tests.category_test",
+        "description": "tests.category_test",
+        "peekOfCode": "class CategoryTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Category class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_category = Category('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
+        "detail": "tests.category_test",
+        "documentation": {
+            "value": "\n```python\nfrom tests.category_test import CategoryTest\n```\n\n```python\n\n\n```\n\n```python\nclass CategoryTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Category class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_category = Category('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "HeadlinesTest",
+        "kind": 6,
+        "importPath": "tests.headlines_test",
+        "description": "tests.headlines_test",
+        "peekOfCode": "class HeadlinesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Headlines class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_headlines = Headlines('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):",
+        "detail": "tests.headlines_test",
+        "documentation": {
+            "value": "\n```python\nfrom tests.headlines_test import HeadlinesTest\n```\n\n```python\n\n\n```\n\n```python\nclass HeadlinesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Headlines class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_headlines = Headlines('MIKE ISAAC and TAYLOR LORENZ','Sumter mirrors SC, nation in COVID-19\\'s disproportionate impact on African-Americans','2020-09-12T01:20:00Z','https://edition.cnn.com/','https://www.nytimes.com/article/wildfires-photos-california-oregon-washington-state.html','News and buzz')\n    def test_instance(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "SourcesTest",
         "kind": 6,
-        "importPath": "app.sources_test",
-        "description": "app.sources_test",
+        "importPath": "tests.sources_test",
+        "description": "tests.sources_test",
         "peekOfCode": "class SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):",
-        "detail": "app.sources_test",
+        "detail": "tests.sources_test",
         "documentation": {
-            "value": "\n```python\nfrom app.sources_test import SourcesTest\n```\n\n```python\n\n\n```\n\n```python\nclass SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):\n```\n",
+            "value": "\n```python\nfrom tests.sources_test import SourcesTest\n```\n\n```python\n\n\n```\n\n```python\nclass SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):\n```\n",
             "supportThemeIcons": false
         }
     },

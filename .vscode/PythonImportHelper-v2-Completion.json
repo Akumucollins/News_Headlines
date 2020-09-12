@@ -44,6 +44,52 @@
         }
     },
     {
+        "label": "app.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "app.models",
+        "description": "app.models",
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nimport app.models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Sources",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nimport app.models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {
+            "value": "\n```python\nimport unittest\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "Source",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {
+            "value": "\n```python\nimport models\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "NEWS_API_KEY",
         "kind": 5,
         "importPath": "app.instance.config",
@@ -68,6 +114,18 @@
         }
     },
     {
+        "label": "Sources",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Sources:\n    '''\n    Source class to define source objects\n    '''\n    def __init__(self,id,name,description,url):\n        self.id = id\n        self.name = name\n        self.description = description\n        self.url = url",
+        "detail": "app.models",
+        "documentation": {
+            "value": "\n```python\nfrom app.models import Sources\n```\n\n```python\n\n\n```\n\n```python\nclass Sources:\n    '''\n    Source class to define source objects\n    '''\n    def __init__(self,id,name,description,url):\n        self.id = id\n        self.name = name\n        self.description = description\n        self.url = url\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "api_key",
         "kind": 5,
         "importPath": "app.request",
@@ -76,6 +134,18 @@
         "detail": "app.request",
         "documentation": {
             "value": "\n```python\nfrom app.request import api_key\n```\n\n```python\n\n\n```\n\n```python\napi_key = app.config['MOVIE_API_KEY']\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "SourcesTest",
+        "kind": 6,
+        "importPath": "app.source_test",
+        "description": "app.source_test",
+        "peekOfCode": "class SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):",
+        "detail": "app.source_test",
+        "documentation": {
+            "value": "\n```python\nfrom app.source_test import SourcesTest\n```\n\n```python\n\n\n```\n\n```python\nclass SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Sources('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html')\n    def test_instance(self):\n```\n",
             "supportThemeIcons": false
         }
     },

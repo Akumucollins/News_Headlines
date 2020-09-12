@@ -57,45 +57,34 @@
     },
     {
         "label": "Articles",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.models",
+        "description": "app.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.models",
         "documentation": {
-            "value": "\n```python\nimport models\n```\n",
+            "value": "\n```python\nimport app.models\n```\n",
             "supportThemeIcons": false
         }
     },
     {
         "label": "Category",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.models",
+        "description": "app.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.models",
         "documentation": {
-            "value": "\n```python\nimport models\n```\n",
+            "value": "\n```python\nimport app.models\n```\n",
             "supportThemeIcons": false
         }
     },
     {
         "label": "Headlines",
-        "importPath": "models",
-        "description": "models",
+        "importPath": "app.models",
+        "description": "app.models",
         "isExtraImport": true,
-        "detail": "models",
+        "detail": "app.models",
         "documentation": {
-            "value": "\n```python\nimport models\n```\n",
-            "supportThemeIcons": false
-        }
-    },
-    {
-        "label": "Source",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {
-            "value": "\n```python\nimport models\n```\n",
+            "value": "\n```python\nimport app.models\n```\n",
             "supportThemeIcons": false
         }
     },

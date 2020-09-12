@@ -1,5 +1,5 @@
 import unittest
-from models import Headlines
+from app.models import Headlines
 
 class HeadlinesTest(unittest.TestCase):
     '''
@@ -18,5 +18,3 @@ class HeadlinesTest(unittest.TestCase):
         '''
         self.assertTrue(isinstance(self.new_headlines,Headlines))
         
-if __name__ == '__main__':
-    unittest.main()

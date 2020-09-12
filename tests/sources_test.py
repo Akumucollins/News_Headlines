@@ -1,12 +1,10 @@
 import unittest
-from models import Source
 from app.models import Sources
 
 class SourcesTest(unittest.TestCase):
     '''
     Test Class to test the behaviour of the Source class
     '''
-
     def setUp(self):
         '''
         Set up method that will run before every Test
@@ -18,6 +16,3 @@ class SourcesTest(unittest.TestCase):
         Test to check creation of new article Sources instance
         '''
         self.assertTrue(isinstance(self.new_source,Sources))
-
-if __name__ == '__main__':
-    unittest.main()

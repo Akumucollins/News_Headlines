@@ -1,6 +1,6 @@
 
 import unittest
-from models import Category
+from app.models import Category
 
 class CategoryTest(unittest.TestCase):
     '''
@@ -19,5 +19,3 @@ class CategoryTest(unittest.TestCase):
         '''
         self.assertTrue(isinstance(self.new_category,Category))
         
-if __name__ == '__main__':
-    unittest.main()

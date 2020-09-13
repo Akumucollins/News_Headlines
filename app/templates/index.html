@@ -7,53 +7,53 @@
 {% endblock %}
 <!--Content block-->
 {% block content %}
-<div class="container">
-  <div style="background-color:lightblue"class="panel panel-primary">
-    <div class="panel-heading">General</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(general)}}</ul></p>
+<div class="container-fluid">
+  <div style="background-color:lightblue"class="card">
+    <div class="card-title">Top General News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(general)}}</ul></p>
       <hr>
     </div>
   </div>
-  <div style="background-color:orange"class="panel panel-success">
-    <div class="panel-heading">Sports</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(sports)}}</ul></p>
+  <div style="background-color:orange"class="card">
+    <div class="card-title">Top Sports News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(sports)}}</ul></p>
       <hr>
     </div>
   </div>
-  <div style="background-color:#ddd" class="panel panel-info">
-    <div class="panel-heading">Entertainment</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(entertainment)}}</ul></p>
+  <div style="background-color:#ddd" class="card">
+    <div class="card-title">Top Entertainment News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(entertainment)}}</ul></p>
       <hr>
     </div>
   </div>
-  <div style="background-color:linen"class="panel panel-warning">
-    <div class="panel-heading">Business</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(business)}}</ul></p>
+  <div style="background-color:linen"class="card">
+    <div class="card-title">Top Business News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(business)}}</ul></p>
       <hr>
     </div>
   </div>
-  <div style="background-color:#ccc" class="panel panel-danger">
-    <div class="panel-heading">Technology</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(technology)}}</ul></p>
+  <div style="background-color:#ccc" class="card">
+    <div class="card-title">Top Technology News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(technology)}}</ul></p>
       <hr>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">Health</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(health)}}</ul></p>
+  <div class="card" style="background-color: chartreuse;">
+    <div class="card-title">Top Health News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(health)}}</ul></p>
       <hr>
     </div>
   </div>
-  <div style="color:green; background-color:Yellow;"class="panel panel-success">
-    <div class="panel-heading">Science</div>
-    <div class="panel-body">
-      <p><ul>{{ macro.displayNewsList(science)}}</ul></p>
+  <div style="background-color:Yellow;"class="card">
+    <div class="card-title">Top Science News Sources</div>
+    <div class="card-body">
+      <p><ul>{{ macro.displayArticlesList(science)}}</ul></p>
       <hr>
     </div>
   </div>

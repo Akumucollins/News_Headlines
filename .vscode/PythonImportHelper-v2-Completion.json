@@ -468,10 +468,10 @@
         "kind": 6,
         "importPath": "config",
         "description": "config",
-        "peekOfCode": "class Config:\n    '''\n    General configuration parent class\n    '''\n    NEWS_API_SOURCE_URL='https://newsapi.org/v2/sources?apiKey={}'\n    NEWS_API_KEY=os.environ.get('NEWS_API_KEY')\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class\n    Args:",
+        "peekOfCode": "class Config:\n    '''\n    General configuration parent class\n    '''\n    NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?category={}&apiKey={}'\n    NEWS_API_KEY=os.environ.get('NEWS_API_KEY')\n    CATEGORY_API_URL='https://newsapi.org/v2/top-headlines?country=us&category={}&apiKey={}'\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class",
         "detail": "config",
         "documentation": {
-            "value": "\n```python\nfrom config import Config\n```\n\n```python\n\n\n```\n\n```python\nclass Config:\n    '''\n    General configuration parent class\n    '''\n    NEWS_API_SOURCE_URL='https://newsapi.org/v2/sources?apiKey={}'\n    NEWS_API_KEY=os.environ.get('NEWS_API_KEY')\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class\n    Args:\n```\n",
+            "value": "\n```python\nfrom config import Config\n```\n\n```python\n\n\n```\n\n```python\nclass Config:\n    '''\n    General configuration parent class\n    '''\n    NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?category={}&apiKey={}'\n    NEWS_API_KEY=os.environ.get('NEWS_API_KEY')\n    CATEGORY_API_URL='https://newsapi.org/v2/top-headlines?country=us&category={}&apiKey={}'\nclass ProdConfig(Config):\n    '''\n    Production  configuration child class\n```\n",
             "supportThemeIcons": false
         }
     },

@@ -336,10 +336,10 @@
         "kind": 2,
         "importPath": "app.request",
         "description": "app.request",
-        "peekOfCode": "def configure_request(app):\n    global api_key, source_url\n    api_key = app.config['NEWS_API_KEY']\ndef get_sources():\n    '''\n    Function that gets the json response to url request\n    '''\n    get_sources_url= source_url.format(api_key)\n    with urllib.request.urlopen(get_sources_url) as url:\n        get_sources_data = url.read()",
+        "peekOfCode": "def configure_request(app):\n    global api_key,base_url,category_url\n    api_key=app.config['NEWS_API_KEY']\n    base_url=app.config['NEWS_API_BASE_URL']\n    category_url=app.config['CATEGORY_API_URL']\ndef get_sources(category):\n    '''\n    Function that gets json response to our url request\n    '''\n    get_sources_url = base_url.format(category,api_key)",
         "detail": "app.request",
         "documentation": {
-            "value": "\n```python\nfrom app.request import configure_request\n```\n\n```python\n\n\n```\n\n```python\ndef configure_request(app):\n    global api_key, source_url\n    api_key = app.config['NEWS_API_KEY']\ndef get_sources():\n    '''\n    Function that gets the json response to url request\n    '''\n    get_sources_url= source_url.format(api_key)\n    with urllib.request.urlopen(get_sources_url) as url:\n        get_sources_data = url.read()\n```\n",
+            "value": "\n```python\nfrom app.request import configure_request\n```\n\n```python\n\n\n```\n\n```python\ndef configure_request(app):\n    global api_key,base_url,category_url\n    api_key=app.config['NEWS_API_KEY']\n    base_url=app.config['NEWS_API_BASE_URL']\n    category_url=app.config['CATEGORY_API_URL']\ndef get_sources(category):\n    '''\n    Function that gets json response to our url request\n    '''\n    get_sources_url = base_url.format(category,api_key)\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -348,10 +348,10 @@
         "kind": 2,
         "importPath": "app.request",
         "description": "app.request",
-        "peekOfCode": "def get_sources():\n    '''\n    Function that gets the json response to url request\n    '''\n    get_sources_url= source_url.format(api_key)\n    with urllib.request.urlopen(get_sources_url) as url:\n        get_sources_data = url.read()\n        get_sources_response = json.loads(get_sources_data)\n        source_results = None\n        if get_sources_response['sources']:",
+        "peekOfCode": "def get_sources(category):\n    '''\n    Function that gets json response to our url request\n    '''\n    get_sources_url = base_url.format(category,api_key)\n    with urllib.request.urlopen(get_sources_url) as url:\n        get_sources_data = url.read()\n        get_sources_response = json.loads(get_sources_data)\n        sources_results = None\n        if get_sources_response['sources']:",
         "detail": "app.request",
         "documentation": {
-            "value": "\n```python\nfrom app.request import get_sources\n```\n\n```python\n\n\n```\n\n```python\ndef get_sources():\n    '''\n    Function that gets the json response to url request\n    '''\n    get_sources_url= source_url.format(api_key)\n    with urllib.request.urlopen(get_sources_url) as url:\n        get_sources_data = url.read()\n        get_sources_response = json.loads(get_sources_data)\n        source_results = None\n        if get_sources_response['sources']:\n```\n",
+            "value": "\n```python\nfrom app.request import get_sources\n```\n\n```python\n\n\n```\n\n```python\ndef get_sources(category):\n    '''\n    Function that gets json response to our url request\n    '''\n    get_sources_url = base_url.format(category,api_key)\n    with urllib.request.urlopen(get_sources_url) as url:\n        get_sources_data = url.read()\n        get_sources_response = json.loads(get_sources_data)\n        sources_results = None\n        if get_sources_response['sources']:\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -368,14 +368,62 @@
         }
     },
     {
+        "label": "article_source",
+        "kind": 2,
+        "importPath": "app.request",
+        "description": "app.request",
+        "peekOfCode": "def article_source(id):\n    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id,api_key)\n    with urllib.request.urlopen(article_source_url) as url:\n        article_source_data = url.read()\n        article_source_response = json.loads(article_source_data)\n        article_source_results = None\n        if article_source_response['articles']:\n            article_source_list = article_source_response['articles']\n            article_source_results = process_articles_results(article_source_list)\n    return article_source_results",
+        "detail": "app.request",
+        "documentation": {
+            "value": "\n```python\nfrom app.request import article_source\n```\n\n```python\n\n\n```\n\n```python\ndef article_source(id):\n    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id,api_key)\n    with urllib.request.urlopen(article_source_url) as url:\n        article_source_data = url.read()\n        article_source_response = json.loads(article_source_data)\n        article_source_results = None\n        if article_source_response['articles']:\n            article_source_list = article_source_response['articles']\n            article_source_results = process_articles_results(article_source_list)\n    return article_source_results\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "process_articles_results",
+        "kind": 2,
+        "importPath": "app.request",
+        "description": "app.request",
+        "peekOfCode": "def process_articles_results(articles_list):\n    '''\n    process the dictionary and output a list of objects\n    '''\n    article_source_results = []\n    source_dictionary = {}\n    for result in articles_list:\n        source_id = result ['source']\n        source_dictionary['id'] = source_id['id']\n        source_dictionary['name'] = source_id['name']",
+        "detail": "app.request",
+        "documentation": {
+            "value": "\n```python\nfrom app.request import process_articles_results\n```\n\n```python\n\n\n```\n\n```python\ndef process_articles_results(articles_list):\n    '''\n    process the dictionary and output a list of objects\n    '''\n    article_source_results = []\n    source_dictionary = {}\n    for result in articles_list:\n        source_id = result ['source']\n        source_dictionary['id'] = source_id['id']\n        source_dictionary['name'] = source_id['name']\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "get_category",
+        "kind": 2,
+        "importPath": "app.request",
+        "description": "app.request",
+        "peekOfCode": "def get_category(category_name):\n    '''\n    function that gets the response to the category json\n    '''\n    get_category_url = category_url.format(category_name,api_key)\n    print(get_category_url)\n    with urllib.request.urlopen(get_category_url) as url:\n        get_category_data = url.read()\n        get_cartegory_response = json.loads(get_category_data)\n        get_cartegory_results = None",
+        "detail": "app.request",
+        "documentation": {
+            "value": "\n```python\nfrom app.request import get_category\n```\n\n```python\n\n\n```\n\n```python\ndef get_category(category_name):\n    '''\n    function that gets the response to the category json\n    '''\n    get_category_url = category_url.format(category_name,api_key)\n    print(get_category_url)\n    with urllib.request.urlopen(get_category_url) as url:\n        get_category_data = url.read()\n        get_cartegory_response = json.loads(get_category_data)\n        get_cartegory_results = None\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "api_key",
         "kind": 5,
         "importPath": "app.request",
         "description": "app.request",
-        "peekOfCode": "api_key = None\n# Getting source url\nsource_url= None\n# Getting source url\ncat_url= None\ndef configure_request(app):\n    global api_key, source_url\n    api_key = app.config['NEWS_API_KEY']\ndef get_sources():\n    '''",
+        "peekOfCode": "api_key = None\n#getting news base url\nbase_url = None\ncategory_url= None\ndef configure_request(app):\n    global api_key,base_url,category_url\n    api_key=app.config['NEWS_API_KEY']\n    base_url=app.config['NEWS_API_BASE_URL']\n    category_url=app.config['CATEGORY_API_URL']\ndef get_sources(category):",
         "detail": "app.request",
         "documentation": {
-            "value": "\n```python\nfrom app.request import api_key\n```\n\n```python\n\n\n```\n\n```python\napi_key = None\n# Getting source url\nsource_url= None\n# Getting source url\ncat_url= None\ndef configure_request(app):\n    global api_key, source_url\n    api_key = app.config['NEWS_API_KEY']\ndef get_sources():\n    '''\n```\n",
+            "value": "\n```python\nfrom app.request import api_key\n```\n\n```python\n\n\n```\n\n```python\napi_key = None\n#getting news base url\nbase_url = None\ncategory_url= None\ndef configure_request(app):\n    global api_key,base_url,category_url\n    api_key=app.config['NEWS_API_KEY']\n    base_url=app.config['NEWS_API_BASE_URL']\n    category_url=app.config['CATEGORY_API_URL']\ndef get_sources(category):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "base_url",
+        "kind": 5,
+        "importPath": "app.request",
+        "description": "app.request",
+        "peekOfCode": "base_url = None\ncategory_url= None\ndef configure_request(app):\n    global api_key,base_url,category_url\n    api_key=app.config['NEWS_API_KEY']\n    base_url=app.config['NEWS_API_BASE_URL']\n    category_url=app.config['CATEGORY_API_URL']\ndef get_sources(category):\n    '''\n    Function that gets json response to our url request",
+        "detail": "app.request",
+        "documentation": {
+            "value": "\n```python\nfrom app.request import base_url\n```\n\n```python\n\n\n```\n\n```python\nbase_url = None\ncategory_url= None\ndef configure_request(app):\n    global api_key,base_url,category_url\n    api_key=app.config['NEWS_API_KEY']\n    base_url=app.config['NEWS_API_BASE_URL']\n    category_url=app.config['CATEGORY_API_URL']\ndef get_sources(category):\n    '''\n    Function that gets json response to our url request\n```\n",
             "supportThemeIcons": false
         }
     },

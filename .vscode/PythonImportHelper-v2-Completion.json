@@ -77,6 +77,17 @@
         }
     },
     {
+        "label": "current_app",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {
+            "value": "\n```python\nimport flask\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "get_sources",
         "importPath": "app.request",
         "description": "app.request",
@@ -167,14 +178,13 @@
         }
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "create_app",
+        "importPath": "app",
+        "description": "app",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "app",
         "documentation": {
-            "value": "\n```python\nimport os\n```\n",
+            "value": "\n```python\nimport app\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -186,6 +196,18 @@
         "detail": "app",
         "documentation": {
             "value": "\n```python\nimport app\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {
+            "value": "\n```python\nimport os\n```\n",
             "supportThemeIcons": false
         }
     },
@@ -460,6 +482,18 @@
         "detail": "tests.sources_test",
         "documentation": {
             "value": "\n```python\nfrom tests.sources_test import SourcesTest\n```\n\n```python\n\n\n```\n\n```python\nclass SourcesTest(unittest.TestCase):\n    '''\n    Test Class to test the behaviour of the Source class\n    '''\n    def setUp(self):\n        '''\n        Set up method that will run before every Test\n        '''\n        self.new_source = Source('CNN','CNN News','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2020/09/11/us/fires-oregon-california-washington.html','Business News','BBC News','en')\n    def test_instance(self):\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "BasicsTestCase",
+        "kind": 6,
+        "importPath": "tests.test_basics",
+        "description": "tests.test_basics",
+        "peekOfCode": "class BasicsTestCase(unittest.TestCase):\n    def setUp(self):\n        '''\n        Method called to prepare the test fixture. This is called immediately before calling the test method; other than AssertionError or SkipTest, any exception raised by this method will be considered an error rather than a test failure.\n        '''\n        self.app = create_app('development')\n        self.app_context = self.app.app_context()\n        self.app_context.push()\n    def tearDown(self):\n        '''",
+        "detail": "tests.test_basics",
+        "documentation": {
+            "value": "\n```python\nfrom tests.test_basics import BasicsTestCase\n```\n\n```python\n\n\n```\n\n```python\nclass BasicsTestCase(unittest.TestCase):\n    def setUp(self):\n        '''\n        Method called to prepare the test fixture. This is called immediately before calling the test method; other than AssertionError or SkipTest, any exception raised by this method will be considered an error rather than a test failure.\n        '''\n        self.app = create_app('development')\n        self.app_context = self.app.app_context()\n        self.app_context.push()\n    def tearDown(self):\n        '''\n```\n",
             "supportThemeIcons": false
         }
     },

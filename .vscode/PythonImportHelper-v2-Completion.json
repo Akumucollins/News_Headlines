@@ -77,6 +77,17 @@
         }
     },
     {
+        "label": "get_sources",
+        "importPath": "app.request",
+        "description": "app.request",
+        "isExtraImport": true,
+        "detail": "app.request",
+        "documentation": {
+            "value": "\n```python\nimport app.request\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
         "label": "Bootstrap",
         "importPath": "flask_bootstrap",
         "description": "flask_bootstrap",
@@ -240,10 +251,34 @@
         "kind": 2,
         "importPath": "app.main.views",
         "description": "app.main.views",
-        "peekOfCode": "def index():\n    '''\n    View root page function that returns the index page and\n    its data\n    '''\n    # get general sources\n    general_sources = get_sources('general')\n    sports_sources = get_sources('sports')\n    technology_sources = get_sources('technology')\n    entertainment_sources = get_sources('entertainment')",
+        "peekOfCode": "def index():\n    '''\n    View root page function that returns the index page and\n    its data\n    '''\n    general_sources = get_sources('general')\n    sports_sources = get_sources('sports')\n    technology_sources = get_sources('technology')\n    entertainment_sources = get_sources('entertainment')\n    business_sources = get_sources('business')",
         "detail": "app.main.views",
         "documentation": {
-            "value": "\n```python\nfrom app.main.views import index\n```\n\n```python\n\n\n```\n\n```python\ndef index():\n    '''\n    View root page function that returns the index page and\n    its data\n    '''\n    # get general sources\n    general_sources = get_sources('general')\n    sports_sources = get_sources('sports')\n    technology_sources = get_sources('technology')\n    entertainment_sources = get_sources('entertainment')\n```\n",
+            "value": "\n```python\nfrom app.main.views import index\n```\n\n```python\n\n\n```\n\n```python\ndef index():\n    '''\n    View root page function that returns the index page and\n    its data\n    '''\n    general_sources = get_sources('general')\n    sports_sources = get_sources('sports')\n    technology_sources = get_sources('technology')\n    entertainment_sources = get_sources('entertainment')\n    business_sources = get_sources('business')\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "article",
+        "kind": 2,
+        "importPath": "app.main.views",
+        "description": "app.main.views",
+        "peekOfCode": "def article(id):\n    '''\n    View article page function that returns the various article details page and its data\n    '''\n    articles = article_source(id)\n    return render_template('article.html',articles= articles,id=id )\n@main.route('/categories/<category_name>')\ndef category(category_name):\n    '''\n    function to return the categories.html page and its content",
+        "detail": "app.main.views",
+        "documentation": {
+            "value": "\n```python\nfrom app.main.views import article\n```\n\n```python\n\n\n```\n\n```python\ndef article(id):\n    '''\n    View article page function that returns the various article details page and its data\n    '''\n    articles = article_source(id)\n    return render_template('article.html',articles= articles,id=id )\n@main.route('/categories/<category_name>')\ndef category(category_name):\n    '''\n    function to return the categories.html page and its content\n```\n",
+            "supportThemeIcons": false
+        }
+    },
+    {
+        "label": "category",
+        "kind": 2,
+        "importPath": "app.main.views",
+        "description": "app.main.views",
+        "peekOfCode": "def category(category_name):\n    '''\n    function to return the categories.html page and its content\n    '''\n    category = get_category(category_name)\n    title = f'{category_name}'\n    categories = category_name\n    return render_template('categories.html',title = title,category = category, categories= category_name)",
+        "detail": "app.main.views",
+        "documentation": {
+            "value": "\n```python\nfrom app.main.views import category\n```\n\n```python\n\n\n```\n\n```python\ndef category(category_name):\n    '''\n    function to return the categories.html page and its content\n    '''\n    category = get_category(category_name)\n    title = f'{category_name}'\n    categories = category_name\n    return render_template('categories.html',title = title,category = category, categories= category_name)\n```\n",
             "supportThemeIcons": false
         }
     },

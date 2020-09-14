@@ -19,7 +19,7 @@
 ---
 
 ## Description
-> This application displays a list of all various news sources and users can view newa articles and their categories. This applications makes use of NewsApi to retieve top news airticles from different news sources with relative categories.
+> This application displays a list of all various news sources and users can view newa articles and their categories. This applications makes use of News API to retrieve top news articles from different news sources with relative categories.
 
 ***
 

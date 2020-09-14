@@ -1,13 +1,14 @@
 ***
 
-# PASSWORD LOCKER
+# News Highlights
 
-#### **Monday September 6 2020** ;
+#### **Monday September 14 2020** ;
 
 ***
 
 ## Author
-> By **Akumu Collins** ;
+> By ** [Akumu Collins](https://github.com/Akumucollins)
+ ** ;
 
 ***
 

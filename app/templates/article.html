@@ -1,5 +1,6 @@
-{% extends 'base.html'%} 
+{% extends 'base.html'%}
 {% block content %}
+
 <body>
   <h1 align="center" class="text-capitalize"> {{id}} </h3>
     <div class="container-fluid">
@@ -15,11 +16,14 @@
             <h4><b><i>Published On </i></b> {{article.publishedAt}}</h4>
           </div>
           <div class="card-footer">
-           <h3><b><i>Get More Information @ </i></b><a href="{{article.url}}">{{article.name}}</a></h3> 
+            <h3><b><i>Get More Information @ </i></b><a href="{{article.url}}">{{article.name}}</a></h3>
           </div>
         </div>
         {% endfor %}
       </div>
+    </div>
+    <div class="footer">
+      <h6 class="text-center text-info">©Collins Akumu@2020</h6>©Collins Akumu@2020
     </div>
 </body>
 {% endblock %}

@@ -17,14 +17,17 @@
         {{article.title}}
     </div>
     <div class="card-body">
-        <img src="{{article.urlToImage}}" alt="{{article.title}}" style="height:200px; width:200px;" />
-        <p><b><i>Written by: </i></b>{{article.author}}</p>
-        <p><b><i>Description: </i></b> {{article.description}}</p>
-        <p><b><i>Published at: </i></b> {{article.publishedAt}}</p>
+        <img src="{{article.urlToImage}}" alt="{{article.title}}" style="width:100%;" />
+        <h4><b><i>Written By </i></b>{{article.author}}</h4>
+        <h4><b><i>Published On </i></b> {{article.publishedAt}}</h4>
     </div>
     <div class="card-footer">
-        <b><i>Get More@: </i></b><a href="{{article.url}}">{{article.name}}</a>
+        <h3><b><i>Get More Information @ </i></b><a href="{{article.url}}">{{article.name}}</a></h3>
     </div>
+</div>
+</div>
+<div class="footer">
+    <h6 class="text-center text-info">©Collins Akumu@2020</h6>©Collins Akumu@2020
 </div>
 {% endfor %}
 {% endmacro %}

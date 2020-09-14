@@ -6,16 +6,19 @@
         <div class="container-fluid">
             <div class="cards-columns">
                 {% for category in category %}
-                <div class="card d-flex">
-                    <img class="card" src="{{category.urlToImage}}" alt="{{category.title}}" style="width:100%;">
+                <div class="card" style=" width:100%; margin-bottom:5%; margin-left:0%;">
+                    <div class="card-header">
+                        <h2>{{category.title}}</h2>
+                      </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{category.author}}</h5>
-                        <p class="card-text">{{category.description}}</p>
-                        <small class="text-muted">Publish date:{{category.publishedAt}}</small>
+                        <img class="card" src="{{category.urlToImage}}" alt="{{category.title}}" style="width:100%;">
+                        <h4><b><i>Written By </i></b>{{category.author}}</h4>
+                        <h4><b><i>News Description </i></b>{{category.description}}</h4>
+                        <h4><b><i>Published On </i></b> {{category.publishedAt}}</h4>
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-info" href="{{category.url}}">
-                            <p class="card-text">Click here for more details!</p>
+                            <p class="card-text text-center">GetMore@{{category.name}}</p>
                         </a>
                     </div>
                 </div>

@@ -1,0 +1,25 @@
+{% extends 'base.html'%} 
+{% block content %}
+<body>
+  <h1 align="center" class="text-capitalize"> {{id}} </h3>
+    <div class="container-fluid">
+      <div class="cards-columns">
+        {% for article in articles %}
+        <div class="card" style=" width:100%; margin-bottom:5%; margin-left:0%;">
+          <div class="card-header">
+            <h2>{{article.title}}</h2>
+          </div>
+          <div class="card-body">
+            <img src="{{article.urlToImage}}" alt="{{article.title}}" style="width:100%;" />
+            <h4><b><i>Written By </i></b>{{article.author}}</h4>
+            <h4><b><i>Published On </i></b> {{article.publishedAt}}</h4>
+          </div>
+          <div class="card-footer">
+           <h3><b><i>Get More Information @ </i></b><a href="{{article.url}}">{{article.name}}</a></h3> 
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+</body>
+{% endblock %}

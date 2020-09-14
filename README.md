@@ -19,7 +19,7 @@
 ---
 
 ## Description
-> This application  allows users to  manage their passwords and even generate new unique random passwords for the users. Users can also create new account, display and view the saved accounts, find the existing accounts and delete an account.
+> This application displays a list of all various news sources and users can view newa articles and their categories. This applications makes use of NewsApi to retieve top news airticles from different news sources with relative categories.
 
 ***
 
@@ -45,8 +45,8 @@
 ***
 
 # Technologies Used
-> Flask
-> Python.
+>* Flask
+>* Python.
 
 ***
 

@@ -20,6 +20,8 @@
 ## Description
 > This application  allows users to  manage their passwords and even generate new unique random passwords for the users. Users can also create new account, display and view the saved accounts, find the existing accounts and delete an account.
 
+***
+
 ## Setup/Installation Requirements
 * install the latest python3 in your computer with $ sudo apt-get update and sudo apt-get install python3.6 command
 * install pip in you computer using $sudo apt install python3-pip command
